@@ -5,7 +5,7 @@ ruby '2.0.0'
 gem 'rails', '4.2.0'
 
 # Build postgres SQL
-gem 'pg', '0.18.1'
+# gem 'pg', '0.18.1'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -25,7 +25,12 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-gem 'rails_12factor', group: :production
+gem 'mysql2'
+
+group :production do 
+  gem 'rails_12factor', '0.0.2'
+end
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -38,7 +43,6 @@ gem 'rails_12factor', group: :production
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
   
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
