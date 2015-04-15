@@ -36,6 +36,10 @@ transition: width  0.2s ease-in-out;
     border-radius: 3px;
 }
 
+.custom-search-form{
+    margin-top:5px;
+}
+
 .search-query:focus + button {
     z-index: 3;   
 }   
@@ -151,3 +155,7 @@ input.searchbox:focus {
     transition: width 0.5s;
 }
 /***** end of 'search' *****/
+
+
+/***** form-control  ****/
+.form-control { margin-bottom: 10px; }
