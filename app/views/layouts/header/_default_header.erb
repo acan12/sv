@@ -8,7 +8,11 @@
 			<div class="container">
 			  <div class="row">
 			    <div class="col-md-7">
-			      <%= image_tag "img/logo/logo-storyveller.png" %>
+			      <%= 
+			        link_to root_path do 
+			          image_tag "img/logo/logo-storyveller.png" 
+		          end
+			      %>
 			    </div>
 			    <div class="col-md-4">
 			      <span class="brand" style="color: #888; font-size: 12; font-style: italic;"> * Travelling journal for travellers</span>
@@ -35,5 +39,3 @@
 	</div>
 
 	<!-- Header one ends -->
-	
-	<br />
