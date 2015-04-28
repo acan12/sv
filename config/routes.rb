@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   root 'pages#index'
   
   resources :pages
+  post 'pages/search' => 'pages#search', as: :article_search
+  
   resources :articles
   
   # Example of regular route:
