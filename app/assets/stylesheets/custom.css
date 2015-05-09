@@ -169,7 +169,7 @@ input.searchbox:focus {
 
 
 /***** highligt image box *****/
-a.hg img {
+a.hg img, img.hg{
   -webkit-transform:scale(1.0); /*Webkit: Scale down image to 0.8x original size*/
   -moz-transform:scale(0.8); /*Mozilla scale version*/
   -o-transform:scale(0.8); /*Opera scale version*/
@@ -179,13 +179,13 @@ a.hg img {
   position: relative;
 }
 
-a.hg:hover img{
+a.hg:hover img, img.hg:hover, div.hg:hover{
   -webkit-transform:scale(1.2); /*Webkit: Scale up image to 1.2x original size*/
   -moz-transform:scale(1.1); /*Mozilla scale version*/
   -o-transform:scale(1.1); /*Opera scale version*/
-  box-shadow:0px 0px 30px gray; /*CSS3 shadow: 30px blurred shadow all around image*/
-  -webkit-box-shadow:0px 0px 30px gray; /*Safari shadow version*/
-  -moz-box-shadow:0px 0px 30px gray; /*Mozilla shadow version*/
+  box-shadow:0px 0px 50px gray; /*CSS3 shadow: 30px blurred shadow all around image*/
+  -webkit-box-shadow:0px 0px 50px gray; /*Safari shadow version*/
+  -moz-box-shadow:0px 0px 50px gray; /*Mozilla shadow version*/
   opacity: 1;
   z-index: 999;
 }
@@ -384,3 +384,41 @@ a.hg:hover img{
 }
 /***** end of list item style *****/
 
+
+
+
+
+/*** mosaic style ***/
+
+
+
+.item {
+  display: block;
+}
+
+
+.box img { width: auto; height: auto; max-height:100%; max-width:100%; }
+.boxx { 	
+				-moz-border-radius:3px;
+  		  -khtml-border-radius: 3px;
+				-webkit-border-radius:3px;
+				border-radius:3px;
+				
+  -webkit-transition: all 300ms cubic-bezier(1.000, 0.000, 0.000, 1.000); 
+     -moz-transition: all 300ms cubic-bezier(1.000, 0.000, 0.000, 1.000); 
+      -ms-transition: all 300ms cubic-bezier(1.000, 0.000, 0.000, 1.000); 
+       -o-transition: all 300ms cubic-bezier(1.000, 0.000, 0.000, 1.000); 
+          transition: all 300ms cubic-bezier(1.000, 0.000, 0.000, 1.000); /* easeInOutExpo */
+
+  -webkit-transition-property: left, right, top;
+     -moz-transition-property: left, right, top;
+      -ms-transition-property: left, right, top;
+       -o-transition-property: left, right, top;
+          transition-property: left, right, top;
+
+}
+				
+
+
+
+/**** end mosaic style ****/
