@@ -388,8 +388,10 @@ blockquote.blockquote-reverse {
   color: #fff;
 }
 .header-1 .navi {
-  background: #5B992A;
-  /*border-bottom: 3px solid #3dcf54;*/
+  background: #FFF; 
+  padding: 30px 0 0 0;
+  border-bottom: 2px solid #E0E0E0;
+  
 }
 .header-1 .navi .navy ul > li.has-sub > a:after {
   color: #30c247;
