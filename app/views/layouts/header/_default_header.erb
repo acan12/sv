@@ -20,10 +20,24 @@
 			  </div>
 			  
 			  <div class="row padding-top-5">
-			    <div class="col-md-12">
+			    <div class="col-md-8">
 			      
 			      <%= render "layouts/nav/mega_menu"%>
             
+			    </div>
+			    <div class="col-md-4">
+			      <div class="search pull-right">
+
+
+
+              <%= form_tag(article_search_path, id: "custom-search-form", class: "form-search form-horizontal" ) do %>  
+                  <div class="input-append span12">
+                      <input type="text" class="search-query mac-style" name="q" placeholder="Search">
+                      <button type="submit" class="btn"><i class="icon-search"></i></button>
+                  </div>
+              <% end %>
+
+            </div>
 			    </div>
 			    
 			  </div>

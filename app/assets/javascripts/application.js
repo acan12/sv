@@ -12,6 +12,14 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require masonry.pkgd.min
-//= require_tree .
+//= require bootstrap.min
+//= require placeholders
+//= require jquery.magnific-popup.min
+//= require owl.carousel.min
+//= require respond.min
+//= require jquery.nested
+//= require mosaic
+//= require html5shiv
+//= require main
+//= require custom
