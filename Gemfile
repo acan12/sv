@@ -61,5 +61,5 @@ end
 
 # Custom client-side framework js
 #gem 'angularjs-rails'
-gem 'ember-rails'
-gem 'ember-source', '~> 1.9.0'
+# gem 'ember-rails'
+# gem 'ember-source', '~> 1.9.0'
