@@ -8,10 +8,19 @@ default: &default
   adapter: sqlite3
   pool: 5
   timeout: 5000
-
+  
+mysql_conn: &mysql_conn
+  adapter: mysql2
+  encoding: utf8
+  username: root
+  password: "120881"
+  host: localhost
+  pool: 24
+  
+  
 development:
-  <<: *default
-  database: db/development.sqlite3
+  <<: *mysql_conn
+  database: storydb
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
