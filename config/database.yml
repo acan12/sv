@@ -25,12 +25,12 @@ test:
   <<: *default
   database: storydb_test
   username: root
-  password: "120881"
+  password: P@$$w0rd01
   host: localhost
 
 production:
   <<: *default
   database: storydb_prod
   username: root
-  password: "120881"
+  password: P@$$w0rd01
   host: localhost 
